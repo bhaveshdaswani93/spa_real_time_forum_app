@@ -21,4 +21,8 @@ class Reply extends Model
     {
         return $this->hasMany(Like::class);
     }
+
+    protected $fillable = [
+        'user_id','question_id','body'
+    ];
 }
